@@ -53,10 +53,10 @@ sample_dict = torch.load(sample_0.pt)
                    |          ...
                    |     └── test/
                    |          ...                    
-                   └── tower_radius/
+                   └── 2_towers/
                    |     └── fit/
                    |     └── test/
-                   └── tower_radius/
+                   └── no_tower/
                    |     └── fit/
                    |     └── test/
 ```
