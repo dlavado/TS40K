@@ -2,7 +2,7 @@
 
 ## Overview
 
-The [TS40K] is a collection of 3D point clouds obtained from LiDAR scans. It is designed for research and development in point cloud segmentation and classification, with a special focvus on power grid insdpection and safety.
+The [TS40K] is a collection of 3D point clouds obtained from LiDAR scans. It is designed for research and development in point cloud segmentation and classification, with a special focus on power grid inspection and safety.
 
 This repository contains easy-to-use DataLoaders (in Pytorch) and Data Modules (in Lightining).
 
@@ -29,11 +29,11 @@ On average, each sample type has a length of 70, 100, and 90 meters, respectivel
 ![image](https://github.com/user-attachments/assets/e6037d68-b290-4ccb-8a7c-334e8dcc9eb8)
 
 ## Data Format
-Upon Processing the original `.las` scans, the data is stores in dictionaries containing torch.Tensors in `.pt` format:
+Upon Processing the original `.las` scans, data is stored in dictionaries containing in `.pt` format as follows:
 
 ```
 sample_dict = {
-    'type' :            sample_type,  # tower_radius, 2_towers, no_tower
+    'type' :            sample_type,  # str \in [tower_radius, 2_towers, no_tower]
     'input_pcd' :       input,  # torch.tensor with shape (N, 3)
     'semantic_labels' : labels[None],  # torch.tensor with shape (N, 1)
     'obj_boxes':        obj_boxes  # list of dicts with keys: ['class_label', 'position', 'dimensions', 'rotation']
@@ -60,7 +60,6 @@ sample_dict = torch.load(sample_0.pt)
                    |     └── fit/
                    |     └── test/
 ```
-
 
 ## How to Download
 To access the TS40K Dataset, you are welcome to request access to the data owners by email:
