@@ -6,10 +6,6 @@ The [TS40K] is a collection of 3D point clouds obtained from LiDAR scans. It is 
 
 This repository contains easy-to-use DataLoaders (in Pytorch) and Data Modules (in Lightining).
 
-
-### Dataset Information
-![Example Image][utils/teaser.png]
-
 ## Table of Contents
 - [Dataset Description](#dataset-description)
 - [Data Format](#data-format)
@@ -29,6 +25,7 @@ To safeguard the transmission network topology, we partition the data into 3 typ
 
 On average, each sample type has a length of 70, 100, and 90 meters, respectively.
 
+![Example Image][utils/teaser.png]
 
 
 ## Data Format
@@ -65,7 +62,7 @@ sample_dict = torch.load(sample_0.pt)
 ```
 
 #### Annotation Distribution
-![Dist Image][utils/ts40k_annotations_distribution]
+![Dist Image][utils/ts40k_annotations_distribution.png]
 
 ## How to Download
 To access the TS40K Dataset, you are welcome to request access to the data owners by email:
