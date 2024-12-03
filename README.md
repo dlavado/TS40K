@@ -25,8 +25,8 @@ To safeguard the transmission network topology, we partition the data into 3 typ
 
 On average, each sample type has a length of 70, 100, and 90 meters, respectively.
 
-![Example Image][utils/teaser.png]
-
+#### Overview of TS40K
+![image](https://github.com/user-attachments/assets/e6037d68-b290-4ccb-8a7c-334e8dcc9eb8)
 
 ## Data Format
 Upon Processing the original `.las` scans, the data is stores in dictionaries containing torch.Tensors in `.pt` format:
@@ -61,8 +61,6 @@ sample_dict = torch.load(sample_0.pt)
                    |     └── test/
 ```
 
-#### Annotation Distribution
-![Dist Image][utils/ts40k_annotations_distribution.png]
 
 ## How to Download
 To access the TS40K Dataset, you are welcome to request access to the data owners by email:
